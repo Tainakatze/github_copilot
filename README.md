@@ -3,8 +3,8 @@ Objetivo:
 Inputando um número de cartão de crédito, validar qual a bandeira daquele cartão.
 
 function validateCreditCard(cardNumber) {
-    // Remove spaces from the card number
-    cardNumber = cardNumber.replace(/\s+/g, '');
+    // Remove spaces and dashes from the card number
+    cardNumber = cardNumber.replace(/\s|-/g, '');
 
     // Visa: Starts with 4
     if (/^4\d{12}(\d{3})?$/.test(cardNumber)) {
@@ -16,7 +16,7 @@ function validateCreditCard(cardNumber) {
         return "MasterCard";
     }
 
-    // Elo: Matches specific intervals (partial implementation for simplicity)
+    // Elo: Matches specific intervals (4011, 4312, 4389, etc.)
     if (/^(4011|4312|4389)\d*$/.test(cardNumber)) {
         return "Elo";
     }
@@ -36,5 +36,11 @@ function validateCreditCard(cardNumber) {
         return "Hipercard";
     }
 
+    // If no match, return Invalid
     return "Invalid";
 }
+
+// Example usage
+const cardNumber = "4011 1234 5678 9012";
+const flag = validateCreditCard(cardNumber);
+console.log(`The card flag is: ${flag}`);
