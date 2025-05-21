@@ -22,7 +22,7 @@ Este projeto apresenta uma solução desenvolvida em **JavaScript** para validar
 
 ---
 
-### **💻 Código Otimizado**  
+### **💻 Código Otimizado:**  
 
 ```javascript
 function validateCreditCard(cardNumber) {
@@ -57,7 +57,7 @@ console.log(`💳 O cartão pertence à bandeira: ${flag}`);
 
 ---
 
-### **📝 Exemplo de Saída**  
+### **📝 Exemplo de Saída:**  
 
 Caso seja fornecido o número `"4011 1234 5678 9012"`, o console exibirá:  
 
@@ -67,7 +67,7 @@ Caso seja fornecido o número `"4011 1234 5678 9012"`, o console exibirá:
 
 ---
 
-### **✨ Benefícios da Abordagem**  
+### **✨ Benefícios da Abordagem:**  
 
 🔹 **Código modular e estruturado para fácil manutenção e expansão.**  
 🔹 **Melhoria na legibilidade e eficiência do processamento.**  
@@ -76,7 +76,7 @@ Caso seja fornecido o número `"4011 1234 5678 9012"`, o console exibirá:
 
 ---
 
-### **🔎 Conclusão**  
+### **🔎 Conclusão:**  
 
 A validação de cartões de crédito é uma etapa essencial para garantir segurança e confiabilidade em sistemas que lidam com pagamentos. Esta implementação em **JavaScript**, com suporte do **GitHub Copilot**, oferece uma abordagem eficiente e escalável, facilitando tanto a identificação de bandeiras quanto a verificação de validade dos números inseridos.  
 
